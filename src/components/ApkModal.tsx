@@ -11,7 +11,7 @@ export const ApkModal: React.FC<ApkModalProps> = ({ onClose }) => {
   const [activeTab, setActiveTab] = useState<'pwa' | 'pwabuilder' | 'capacitor'>('pwa');
 
   const rawUrl = window.location.href;
-  const publicUrl = 'https://ais-pre-tumzv3z3nz6uus244vgqzp-545259533283.us-east1.run.app';
+  const publicUrl = 'https://martinalvan.github.io/TheBackRooms/';
   const currentUrl = rawUrl.startsWith('http') ? rawUrl : publicUrl;
 
   useEffect(() => {
