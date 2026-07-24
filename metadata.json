@@ -1,0 +1,6 @@
+{
+  "name": "The Backrooms: Infinito",
+  "description": "Juego de terror y exploración infinita en The Backrooms con generación procedimental de laberintos, niveles perturbadores, entidades y mecánicas de cordura.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
