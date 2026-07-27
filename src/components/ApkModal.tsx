@@ -162,11 +162,36 @@ export const ApkModal: React.FC<ApkModalProps> = ({ onClose }) => {
             <div className="p-4 bg-neutral-900/80 border border-neutral-800 rounded-2xl space-y-2 text-xs text-neutral-300 font-mono">
               <div className="font-bold text-yellow-400 uppercase">Cómo generar tu APK en 1 minuto:</div>
               <ol className="list-decimal list-inside space-y-1.5 leading-relaxed">
-                <li>Copia la URL pública de arriba (o la URL de tu repositorio subido a <strong>GitHub Pages / Vercel / Netlify</strong>).</li>
+                <li>Copia la URL pública de arriba (o la URL de tu app desplegada en <strong>GitHub Pages / Vercel / Netlify</strong>).</li>
                 <li>Visita el sitio gratuito <span className="text-yellow-300 font-bold">PWABuilder.com</span> o <span className="text-yellow-300 font-bold">WebIntoApp.com</span>.</li>
                 <li>Pega la URL y haz clic en <span className="text-yellow-300 font-bold">"Build My APK"</span>.</li>
                 <li>Descarga el archivo <span className="text-green-400 font-bold">.APK</span> listo para instalar en cualquier Android.</li>
               </ol>
+            </div>
+
+            {/* GitHub Pages Blank Screen Tip */}
+            <div className="p-3 bg-blue-950/40 border border-blue-500/30 rounded-xl text-xs text-blue-200 font-mono space-y-2">
+              <div className="font-bold text-cyan-400 text-sm">💡 ¿Por qué aparece la página en blanco o solo ves "Static HTML / Jekyll"?</div>
+              <p className="text-neutral-300">
+                GitHub Pages no sabe compilar React/Vite directamente desde la rama principal. Tienes <strong>3 soluciones muy fáciles</strong>:
+              </p>
+              
+              <div className="bg-black/50 p-2.5 rounded-lg border border-blue-500/20 space-y-1 text-[11px]">
+                <p className="text-yellow-300 font-bold">1️⃣ Opción más fácil: Usar Vercel.com (Gratis)</p>
+                <p>Ve a <a href="https://vercel.com" target="_blank" rel="noreferrer" className="underline text-cyan-300">Vercel.com</a> → Inicia sesión con GitHub → "Add New Project" → Selecciona <strong>TheBackRooms</strong> → Clic en <strong>Deploy</strong>. ¡Vercel compilará la app en 15 segundos con URL lista para PWABuilder!</p>
+              </div>
+
+              <div className="bg-black/50 p-2.5 rounded-lg border border-blue-500/20 space-y-1 text-[11px]">
+                <p className="text-yellow-300 font-bold">2️⃣ GitHub Actions en GitHub Pages</p>
+                <p>• Ve a la pestaña <strong>Actions</strong> arriba en tu repositorio de GitHub.</p>
+                <p>• Busca <strong>"Vite"</strong> y haz clic en <strong>Configure</strong> → <strong>Commit changes</strong>.</p>
+                <p>• Ahora en <strong>Settings → Pages → Source</strong> selecciona <strong>"GitHub Actions"</strong>.</p>
+              </div>
+
+              <div className="bg-black/50 p-2.5 rounded-lg border border-blue-500/20 space-y-1 text-[11px]">
+                <p className="text-yellow-300 font-bold">3️⃣ Compilar en tu PC y subir la carpeta dist</p>
+                <p>En tu terminal ejecuta: <code className="text-green-300">npm run build</code>. Esto creará la carpeta <code className="text-yellow-300">dist/</code> con el <code className="text-yellow-300">index.html</code> ya procesado para subir a GitHub Pages.</p>
+              </div>
             </div>
 
             <a
