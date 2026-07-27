@@ -178,7 +178,9 @@ export const ApkModal: React.FC<ApkModalProps> = ({ onClose }) => {
               
               <div className="bg-black/50 p-2.5 rounded-lg border border-blue-500/20 space-y-1 text-[11px]">
                 <p className="text-yellow-300 font-bold">1️⃣ Opción más fácil: Usar Vercel.com (Gratis)</p>
-                <p>Ve a <a href="https://vercel.com" target="_blank" rel="noreferrer" className="underline text-cyan-300">Vercel.com</a> → Inicia sesión con GitHub → "Add New Project" → Selecciona <strong>TheBackRooms</strong> → Clic en <strong>Deploy</strong>. ¡Vercel compilará la app en 15 segundos con URL lista para PWABuilder!</p>
+                <p>Ve a <a href="https://vercel.com" target="_blank" rel="noreferrer" className="underline text-cyan-300">Vercel.com</a> → Inicia sesión con GitHub → "Add New Project" → Selecciona <strong>TheBackRooms</strong> → Clic en <strong>Deploy</strong>.</p>
+                <p className="text-emerald-300 font-bold mt-1">⚠️ ¡ATENCIÓN EN PWABUILDER!</p>
+                <p className="text-amber-200">No pegues <code className="text-yellow-300">vercel.com</code>. Pega la URL específica que te da Vercel para tu juego (ejemplo: <code className="text-green-300">https://tu-proyecto.vercel.app</code>) o la URL de este preview. ¡Si pegas vercel.com saldrá el logo y nombre de Vercel!</p>
               </div>
 
               <div className="bg-black/50 p-2.5 rounded-lg border border-blue-500/20 space-y-1 text-[11px]">
